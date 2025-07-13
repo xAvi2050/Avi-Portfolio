@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import heroImage from "../assets/hero-img.png";
 import Lottie from "lottie-react";
 import heroAnimation from "../assets/BG_sparkles.json";
-
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const textToType = "Hii, I’m Avijit Rajak\nI Build Websites";
@@ -112,11 +112,12 @@ const Hero = () => {
             </button>
           </motion.a>
 
-          <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} href="/contact">
-            <button className="bg-[#FCD12A] text-black px-6 py-3 rounded-[0.5rem] font-medium transition cursor-pointer">
+          <Link to="/contact">
+            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} className="bg-[#FCD12A] text-black px-6 py-3 rounded-[0.5rem] font-medium transition cursor-pointer">
               Contact Me
-            </button>
-          </motion.a>
+            </motion.button>
+          </Link>
+
         </div>
       </motion.div>
 

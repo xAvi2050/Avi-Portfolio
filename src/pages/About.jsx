@@ -1,6 +1,8 @@
 import { FaInstagram, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
 import ProfileImage from '../assets/hero-img.png';
 
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <section className="bg-none min-h-screen px-6 md:px-16 py-20 flex flex-col justify-between items-center text-center md:text-left">
@@ -11,12 +13,9 @@ const About = () => {
           <p className="text-zinc-700 leading-relaxed">
             Hii, My name is Avijit Rajak and I'm a web developer with expertise in front-end development, skilled in creating responsive, user-friendly interfaces that work seamlessly across devices. I specialize in HTML, CSS, JavaScript, and modern frameworks, and I enjoy bringing designs to life with clean, efficient code. I'm passionate about blending aesthetics with functionality, constantly exploring new trends and tools to stay ahead. Beyond coding, I'm an entrepreneur at heart—driven to build impactful digital solutions. Whether working on personal projects or collaborating with teams, I bring creativity, innovation, and a relentless focus on results to everything I do.
           </p>
-          <a
-            href="/contact"
-            className="inline-block px-6 py-2 bg-main-blue text-white rounded-md font-semibold"
-          >
+          <Link to="/contact" className="inline-block px-6 py-2 bg-main-blue text-white rounded-md font-semibold">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Right - Image with Circle BG */}

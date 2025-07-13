@@ -22,7 +22,7 @@ const ResumeWindow = ({ onClose }) => {
 
           <div className="flex flex-col gap-3">
             <a
-              href="/Avijit_Resume.pdf"
+              href="https://drive.google.com/file/d/1bSVDeMe6ytFmQ9H7KU3ivhKGzCfZGnuL/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-main-blue text-white px-4 py-2 text-sm md:text-base rounded-full transition cursor-pointer hover:bg-main-blue/80"
