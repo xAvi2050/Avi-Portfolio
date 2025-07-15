@@ -1,32 +1,29 @@
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 
 const Contact = () => {
+  const formRef = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const form = e.target;
-
-    const formData = {
-      from_name: form.from_name.value,
-      from_email: form.from_email.value,
-      from_message: form.from_message.value,
-    };
+    const loadingToast = toast.loading("Sending your message...");
 
     emailjs
-      .send(
+      .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        formData,
+        formRef.current,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
-        toast.success("Message sent successfully!");
-        form.reset();
+        toast.success("Message sent successfully!", { id: loadingToast });
+        formRef.current.reset();
       })
       .catch((err) => {
         console.error("Email error:", err);
-        toast.error("Failed to send message.");
+        toast.error("Failed to send message. Try again later.", { id: loadingToast });
       });
   };
 
@@ -34,10 +31,7 @@ const Contact = () => {
     <section className="bg-none py-20 px-6 md:px-16 max-w-4xl mx-auto">
       <h2 className="text-3xl md:text-5xl font-bold text-center text-zinc-900 mb-12">Contact Me</h2>
 
-      <form
-        onSubmit={sendEmail}
-        className="bg-white p-8 rounded-xl shadow-lg space-y-6 border border-zinc-200"
-      >
+      <form ref={formRef} onSubmit={sendEmail} className="bg-white p-8 rounded-xl shadow-lg space-y-6 border border-zinc-200">
         <div>
           <label className="block text-zinc-700 font-semibold mb-1">Full Name</label>
           <input
