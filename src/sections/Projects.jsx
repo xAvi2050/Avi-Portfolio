@@ -57,7 +57,7 @@ const Projects = () => {
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.6 }}
+            viewport={{ amount: 0.4 }}
             custom={index}
             className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} bg-white rounded-2xl overflow-hidden shadow-md`}
           >
