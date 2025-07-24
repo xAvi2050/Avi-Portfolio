@@ -25,7 +25,7 @@ const projects = [
 ];
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 60 },
+  hidden: { opacity: 0, y: 30 },
   visible: (i = 1) => ({
     opacity: 1,
     y: 0,
@@ -33,6 +33,7 @@ const fadeInUp = {
       delay: i * 0.2,
       duration: 0.6,
       ease: 'easeOut',
+      type: 'tween',
     },
   }),
 };
@@ -57,7 +58,7 @@ const Projects = () => {
             variants={fadeInUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.4 }}
+            viewport={{ amount: 0.75, once: false }}
             custom={index}
             className={`flex flex-col md:flex-row ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''} bg-white rounded-2xl overflow-hidden shadow-md`}
           >
@@ -75,7 +76,7 @@ const Projects = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                viewport={{ once: true }}
+                viewport={{ amount: 0.75, once: false }}
               >
                 {project.title}
               </motion.h3>
@@ -85,7 +86,7 @@ const Projects = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.4 }}
-                viewport={{ once: true }}
+                viewport={{ amount: 0.75, once: false }}
               >
                 {project.description}
               </motion.p>
