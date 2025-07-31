@@ -38,7 +38,7 @@ const ResumeWindow = ({ onClose }) => {
             </a>
             <button
               onClick={onClose}
-              className="text-xs md:text-sm hover:bg-red-600 hover:text-white px-4 py-2 rounded-full mt-2 cursor-pointer"
+              className="border hover:bg-red-600 hover:text-white px-4 py-2 text-sm md:text-base rounded-full cursor-pointer"
             >
               Cancel
             </button>

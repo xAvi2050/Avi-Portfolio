@@ -56,10 +56,10 @@ const Footer = () => {
         {/* Link Sections */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-10 text-sm mt-10 md:mt-0 w-full md:w-2/3">
           <div>
-            <h4 className="font-semibold mb-3">Company</h4>
+            <h4 className="font-semibold mb-3">Information</h4>
             <ul className="space-y-2 text-white/80">
               <li><Link to="/about">About</Link></li>
-              <li><a href="#">Be the Voice</a></li>
+              <li><a href="https://github.com/xAvi2050">GitHub</a></li>
               <li><a href="#">Blogs</a></li>
             </ul>
           </div>
@@ -75,7 +75,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3">Career</h4>
             <ul className="space-y-2 text-white/80">
-              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Achievements</a></li>
             </ul>
           </div>
         </div>

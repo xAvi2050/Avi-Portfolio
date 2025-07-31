@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
+import { FaGitAlt } from 'react-icons/fa';
+import { SiVercel, SiRender, SiCanva } from 'react-icons/si';
 
 
 const skills = [
@@ -13,7 +15,12 @@ const skills = [
   { name: 'Express.js', icon: <SiExpress size={50} />, color: '#000000' },
   { name: 'MongoDB', icon: <SiMongodb size={50} />, color: '#4DB33D' },
   { name: 'MySQL', icon: <SiMysql size={60} />, color: '#4479A1' },
+  { name: 'Git', icon: <FaGitAlt size={50} />, color: '#f34f29' },
+  { name: 'Vercel', icon: <SiVercel size={50} />, color: '#000000' },
+  { name: 'Render', icon: <SiRender size={50} />, color: '#46E3B7' },
+  { name: 'Canva', icon: <SiCanva size={50} />, color: '#00C4CC' },
 ];
+
 
 const Skills = () => {
   return (

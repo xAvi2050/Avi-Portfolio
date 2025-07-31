@@ -87,73 +87,75 @@ const Hero = () => {
   
 
   return (
-    <main className="relative flex flex-col md:flex-row justify-between items-center px-6 md:px-16 pt-10 pb-20 md:pt-12 font-navbar max-w-7xl mx-auto overflow-hidden md:min-h-[100vh]">
+    <>
+      <main className="relative flex flex-col md:flex-row justify-between items-center px-6 md:px-16 pt-10 pb-20 md:pt-12 font-navbar max-w-7xl mx-auto overflow-hidden md:min-h-[100vh]">
 
-      {/* Left Section */}
-      <motion.div
-        variants={containerMotion}
-        initial="hidden"
-        animate="visible"
-        className="w-full md:w-3/5 text-center md:text-left space-y-4 z-10 pb-15 md:mt-0"
-      >
+        {/* Left Section */}
+        <motion.div
+          variants={containerMotion}
+          initial="hidden"
+          animate="visible"
+          className="w-full md:w-3/5 text-center md:text-left space-y-4 z-10 pb-15 md:mt-0"
+        >
 
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight text-zinc-900 whitespace-pre-line">
-          {formattedText}
-        </h1>
+          <h1 className="text-4xl md:text-7xl font-bold leading-tight text-zinc-900 whitespace-pre-line">
+            {formattedText}
+          </h1>
 
-        <p className="text-sm text-[#000000] max-w-lg mx-auto md:mx-0">
-          I help businesses grow by building modern websites that are fast, easy to use, and designed to bring in more customers. My goal is to create websites that truly support a business’s success online.
-        </p>
+          <p className="text-sm text-[#000000] max-w-lg mx-auto md:mx-0">
+            I help businesses grow by building modern websites that are fast, easy to use, and designed to bring in more customers. My goal is to create websites that truly support a business’s success online.
+          </p>
 
-        <div className="flex justify-center md:justify-start gap-4 flex-wrap">
-          <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} href="#projects">
-            <button className="bg-[#39acff] text-white px-6 py-3 rounded-[0.5rem] font-medium hover:opacity-90 transition cursor-pointer">
-              See Projects
-            </button>
-          </motion.a>
+          <div className="flex justify-center md:justify-start gap-4 flex-wrap">
+            <motion.a whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} href="#projects">
+              <button className="bg-[#39acff] text-white px-6 py-3 rounded-[0.5rem] font-medium hover:opacity-90 transition cursor-pointer">
+                See Projects
+              </button>
+            </motion.a>
 
-          <Link to="/contact">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} className="bg-[#FCD12A] text-black px-6 py-3 rounded-[0.5rem] font-medium transition cursor-pointer">
-              Contact Me
-            </motion.button>
-          </Link>
+            <Link to="/contact">
+              <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }} className="bg-[#FCD12A] text-black px-6 py-3 rounded-[0.5rem] font-medium transition cursor-pointer">
+                Contact Me
+              </motion.button>
+            </Link>
 
-        </div>
-      </motion.div>
+          </div>
+        </motion.div>
 
-      {/* Right Section */}
-      <motion.div
-        variants={imageMotion}
-        initial="hidden"
-        animate="visible"
-        className="w-full md:w-2/5 flex justify-center items-center relative"
-      >
-        {/* Lottie Animation in background */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none">
-          <Lottie
-            animationData={heroAnimation}
-            loop
-            autoplay
-            style={{ width: 600, height: 600 }}
+        {/* Right Section */}
+        <motion.div
+          variants={imageMotion}
+          initial="hidden"
+          animate="visible"
+          className="w-full md:w-2/5 flex justify-center items-center relative"
+        >
+          {/* Lottie Animation in background */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none">
+            <Lottie
+              animationData={heroAnimation}
+              loop
+              autoplay
+              style={{ width: 720, height: 720 }}
+            />
+          </div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none">
+            <Lottie
+              animationData={heroAnimation}
+              loop
+              autoplay
+              style={{ width: 720, height: 720 }}
+            />
+          </div>
+
+          {/* Foreground Image */}
+          <img
+            src={heroImage}
+            alt="Hero Image"
+            className="w-full max-w-[300px] md:max-w-[480px] h-auto rounded-[1.25rem] shadow-xl hover:scale-105 transition-transform duration-300 relative z-10 mb-9"
           />
-        </div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none">
-          <Lottie
-            animationData={heroAnimation}
-            loop
-            autoplay
-            style={{ width: 600, height: 600 }}
-          />
-        </div>
-
-        {/* Foreground Image */}
-        <img
-          src={heroImage}
-          alt="Hero Image"
-          className="w-full max-w-[300px] md:max-w-[400px] h-auto rounded-[1.25rem] shadow-xl hover:scale-105 transition-transform duration-300 relative z-10 mb-9"
-        />
-      </motion.div>
-    </main>
+        </motion.div>
+      </main>
+    </>
   );
 };
 
