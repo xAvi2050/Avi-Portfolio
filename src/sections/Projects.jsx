@@ -1,15 +1,9 @@
 import { motion } from 'framer-motion';
-import TicTacToeImg from '../assets/Tic_Tac_Toe.png';
 import CurrencyConverterImg from '../assets/Currency_Converter.png';
 import NotesAppImg from '../assets/Notes_App.png';
+import QuizAppImg from '../assets/QuizAppImg.png';
 
 const projects = [
-  {
-    title: 'Tic-Tac-Toe Game',
-    description: 'A web-based Tic-Tac-Toe game using HTML, CSS, and JavaScript',
-    image: TicTacToeImg,
-    link: 'https://xavi2050.github.io/Tic-Tac-Toe/',
-  },
   {
     title: 'Currency Converter',
     description: 'A simple currency converter application that fetches real-time exchange rates from the ExchangeRate API and converts the entered amount from one currency to another.',
@@ -21,6 +15,12 @@ const projects = [
     description: 'A simple and efficient note-taking application where users can create, edit, delete, and search notes seamlessly.',
     image: NotesAppImg,
     link: 'https://notes-app007.vercel.app/',
+  },
+  {
+    title: 'Quiz App',
+    description: 'Built a dynamic quiz application using React.js with question navigation, answer selection, and score tracking',
+    image: QuizAppImg,
+    link: 'https://quiz-js-swart.vercel.app/',
   },
 ];
 
