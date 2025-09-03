@@ -22,7 +22,7 @@ const ResumeWindow = ({ onClose }) => {
 
           <div className="flex flex-col gap-3">
             <a
-              href="https://drive.google.com/file/d/1kki93ZtewAPN6v8Y3pJCX76j7xpBa807/view?usp=sharing"
+              href="https://drive.google.com/file/d/1t4HfwNkHvMt3_u45kFzWNXZoxQ0mkQZJ/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-main-blue text-white px-4 py-2 text-sm md:text-base rounded-full transition cursor-pointer hover:bg-main-blue/80"
