@@ -10,8 +10,14 @@ const About = () => {
         {/* Left - Text Content */}
         <div className="flex-1 space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold text-zinc-900">About me</h2>
-          <p className="text-zinc-700 leading-relaxed">
-            Hii, My name is Avijit Rajak and I'm a web developer with expertise in front-end development, skilled in creating responsive, user-friendly interfaces that work seamlessly across devices. I specialize in HTML, CSS, JavaScript, and modern frameworks, and I enjoy bringing designs to life with clean, efficient code. I'm passionate about blending aesthetics with functionality, constantly exploring new trends and tools to stay ahead. Beyond coding, I'm an entrepreneur at heart—driven to build impactful digital solutions. Whether working on personal projects or collaborating with teams, I bring creativity, innovation, and a relentless focus on results to everything I do.
+          <p className="text-zinc-700 leading-relaxed text-justify">
+            Hi, my name is <span className="marker-highlight">Avijit Rajak</span> and I’m a <span className="marker-highlight">full-stack web developer</span> with expertise in both front-end and back-end development. 
+            On the front-end, I specialize in creating responsive, user-friendly interfaces with <span className="marker-highlight">HTML, CSS, JavaScript, and modern frameworks</span>—bringing designs to life with clean, efficient code. 
+            On the back-end, I build <span className="marker-highlight">scalable systems and robust APIs,</span> ensuring seamless functionality and smooth data flow between client and server.
+            I’m passionate about blending aesthetics with performance, constantly exploring new tools and trends to stay ahead. 
+            Beyond coding, I’m an <span className="marker-highlight">entrepreneur at heart</span> to create impactful digital solutions. Whether working on personal 
+            projects or collaborating with teams, I bring creativity, innovation, and a relentless focus on results to everything 
+            I do.
           </p>
           <Link to="/contact" className="inline-block px-6 py-2 bg-main-blue text-white rounded-md font-semibold">
             Contact

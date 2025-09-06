@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
-import CurrencyConverterImg from '../assets/Currency_Converter.png';
+import VideoAppImg from '../assets/Video-App.png';
 import NotesAppImg from '../assets/Notes_App.png';
 import QuizAppImg from '../assets/QuizAppImg.png';
 
 const projects = [
   {
-    title: 'Currency Converter',
-    description: 'A simple currency converter application that fetches real-time exchange rates from the ExchangeRate API and converts the entered amount from one currency to another.',
-    image: CurrencyConverterImg,
-    link: 'https://xavi2050.github.io/Currency-Converter/',
+    title: 'Video App',
+    description: ' Video-App is a web-based platform inspired by YouTube, where users can upload videos, manage channels, view watch history, and subscribe to other users.',
+    image: VideoAppImg,
+    link: 'https://github.com/xAvi2050/Video-App',
   },
   {
     title: 'Notes App',

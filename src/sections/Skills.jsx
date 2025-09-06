@@ -1,23 +1,28 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
 import { FaGitAlt } from 'react-icons/fa';
-import { SiVercel, SiRender, SiCanva } from 'react-icons/si';
+import { SiVercel, SiRender, SiTailwindcss, SiCanva, SiRedux, SiDocker } from 'react-icons/si';
+import mongooseLogo from '../assets/mongoose.svg';
 
 
 const skills = [
   { name: 'Java', icon: <FaJava size={50} />, color: '#f89820' },
   { name: 'HTML', icon: <FaHtml5 size={50} />, color: '#e44d26' },
   { name: 'CSS', icon: <FaCss3Alt size={50} />, color: '#264de4' },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss size={50} />, color: '#38BDF8' },
   { name: 'JavaScript', icon: <FaJs size={50} />, color: '#f0db4f' },
   { name: 'React.js', icon: <FaReact size={50} />, color: '#61dafb' },
+  { name: 'Redux Toolkit', icon: <SiRedux size={50} />, color: '#764abc' },
   { name: 'Express.js', icon: <SiExpress size={50} />, color: '#000000' },
   { name: 'MongoDB', icon: <SiMongodb size={50} />, color: '#4DB33D' },
+  { name: 'Mongoose', icon: <img src={mongooseLogo} alt="Mongoose" width={50} height={50} />, color: '#880000' },
   { name: 'MySQL', icon: <SiMysql size={60} />, color: '#4479A1' },
   { name: 'Git', icon: <FaGitAlt size={50} />, color: '#f34f29' },
   { name: 'Vercel', icon: <SiVercel size={50} />, color: '#000000' },
   { name: 'Render', icon: <SiRender size={50} />, color: '#46E3B7' },
+  { name: 'Docker', icon: <SiDocker size={50} />, color: '#2496ED' },
   { name: 'Canva', icon: <SiCanva size={50} />, color: '#00C4CC' },
 ];
 

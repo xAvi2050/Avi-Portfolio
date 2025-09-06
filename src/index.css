@@ -37,3 +37,11 @@ html {
   scrollbar-width: thin; /* Can be auto, thin, or none */
   scrollbar-color: #39acff #f1f1f1;
 }
+
+/* Highlighter */
+.marker-highlight {
+  background: linear-gradient(120deg, #fde047 0%, #fde047 100%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+}
